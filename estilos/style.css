@@ -26,6 +26,9 @@ header{
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky; /*menu fixo*/
+  top: 0; /*grudar o menu no topo*/
+  z-index: 1; /*camada por cima*/
 }
 
 nav#menu ul{
