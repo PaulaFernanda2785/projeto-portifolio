@@ -12,11 +12,21 @@
   --destaque-inverso:#66bbff;
   --fundo-card:#ffffff;
 }
+body.escuro{
+  --fundo-principal:#222222;
+  --texto:#e0e0e0;
+  --texto-inverso:#333333;
+  --destaque:#ff5522;
+  --destaque-inverso:#a73917;
+  --fundo-card:#444444;
+}
+
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color:var(--texto);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header{
@@ -26,6 +36,7 @@ header{
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  align-items: center;
   position: sticky; /*menu fixo*/
   top: 0; /*grudar o menu no topo*/
   z-index: 1; /*camada por cima*/
@@ -41,7 +52,7 @@ nav#menu a{
   text-decoration: none;
   color: var(--texto-inverso);
   font-weight: 600;
-  padding: 12px 15px;
+  padding: 17px 15px 12px 15px;
   border-radius: 5px;
   transition: background-color 0.5s, color 0.5s;
 }
